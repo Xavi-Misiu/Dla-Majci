@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071322">
+  <meta name="description" content="Osiem miesięcy naszej wspólnej historii. Mały, osobisty list dla Majci.">
+  <title>Dla Majci | 8 miesięcy naszej historii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#counter">Przejdź do treści</a>
+  <div class="sky" aria-hidden="true"><div class="moon"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div><div class="star-field" id="star-field"></div></div>
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="Dla Majci, początek strony"><span class="wordmark-heart">♥</span> dla Majci</a>
+    <nav class="main-nav" aria-label="Nawigacja główna">
+      <a href="#counter">Czas</a><a href="#story">Historia</a><a href="#reasons">Za co Cię lubię</a><a href="#letters">Listy</a>
+    </nav>
+    <label class="motion-control" title="Ogranicz animacje"><input id="motion-toggle" type="checkbox"><span aria-hidden="true">◌</span><span class="sr-only">Ogranicz animacje</span></label>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> 27 października 2026 <span class="eyebrow-line"></span></p>
+        <button class="hero-heart secret-trigger" type="button" data-secret="0" aria-label="Odkryj małą niespodziankę"><span>♥</span><i>dla mojej Majci</i></button>
+        <h1 id="hero-title">8 miesięcy naszej<br><em>wspólnej historii</em></h1>
+        <p class="hero-intro">Osiem miesięcy temu zaczęła się historia, którą każdego dnia chcę pisać dalej właśnie z Tobą.</p>
+        <a class="button button-primary" href="#counter">Odkryj naszą historię <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-note" aria-hidden="true"><span class="note-star">✦</span><span>niektóre rzeczy<br>warto odkrywać<br>powoli</span></div>
+      <div class="hero-bottom" aria-hidden="true"><span>NASZA HISTORIA</span><span class="hero-bottom-rule"></span><span>01 — 08</span></div>
+    </section>
+
+    <section class="counter-section section-shell" id="counter" aria-labelledby="counter-title">
+      <div class="section-heading reveal"><p class="eyebrow">OD 26 LUTEGO 2026</p><h2 id="counter-title">Czas, który jest <em>nasz</em></h2><p>Każdy dzień jest częścią naszej historii.</p></div>
+      <div class="counter-grid reveal" role="timer" aria-live="off" aria-label="Czas trwania naszego związku">
+        <div class="counter-unit"><strong id="months">0</strong><span>miesięcy</span></div><div class="counter-divider" aria-hidden="true">·</div>
+        <div class="counter-unit"><strong id="days">0</strong><span>dni</span></div><div class="counter-divider" aria-hidden="true">·</div>
+        <div class="counter-unit"><strong id="hours">00</strong><span>godzin</span></div><div class="counter-divider" aria-hidden="true">·</div>
+        <div class="counter-unit"><strong id="minutes">00</strong><span>minut</span></div><div class="counter-divider" aria-hidden="true">·</div>
+        <div class="counter-unit"><strong id="seconds">00</strong><span>sekund</span></div>
+      </div>
+      <p class="counter-footnote" id="counter-note">licząc od chwili, gdy zostaliśmy parą</p>
+    </section>
+
+    <section class="story-section section-shell" id="story" aria-labelledby="story-title">
+      <div class="section-heading reveal"><p class="eyebrow">ROZDZIAŁY, KTÓRE JUŻ MAMY</p><h2 id="story-title">Nasza <em>historia</em></h2><p>Każdy początek zasługuje na swoją gwiazdę.</p></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-marker" aria-hidden="true">✦</span><p class="timeline-date">16.01.2026 <span>— pierwszy rozdział</span></p><h3>Początek rozmów</h3><p class="timeline-summary">Zaczęliśmy się poznawać. To był początek czegoś, czego jeszcze nie umieliśmy nazwać.</p><details><summary>Rozwiń wspomnienie</summary><p>Tu możesz dopisać, od czego zaczęła się Wasza pierwsza rozmowa i co pomyślałeś o Majci. To miejsce na Wasze prawdziwe wspomnienie.</p></details></article>
+        <div id="monthly-timeline" aria-label="Miesięczne rozdziały naszej historii"></div>
+      </div>
+    </section>
+
+    <section class="reasons-section section-shell" id="reasons" aria-labelledby="reasons-title">
+      <div class="section-heading reveal"><p class="eyebrow">MOGŁABYM WYMIENIAĆ DŁUŻEJ</p><h2 id="reasons-title">Dlaczego <em>właśnie Ty?</em></h2><p>Kliknij wybraną myśl, żeby zobaczyć, co kryje się pod gwiazdką.</p></div>
+      <div class="reasons-grid" id="reasons-grid"></div>
+    </section>
+
+    <section class="letters-section section-shell" id="letters" aria-labelledby="letters-title">
+      <div class="section-heading reveal"><p class="eyebrow">NA KAŻDĄ CHWILĘ</p><h2 id="letters-title">Otwórz, <em>gdy…</em></h2><p>Małe słowa na dni, w których chciałbym być bliżej.</p></div>
+      <div class="envelope-grid" id="envelope-grid"></div>
+    </section>
+
+    <section class="music-section section-shell" aria-labelledby="music-title">
+      <div class="music-copy"><span class="music-icon" aria-hidden="true">♫</span><div><p class="eyebrow">ŚCIEŻKA DŹWIĘKOWA</p><h2 id="music-title">Jedna piosenka, <em>nasz wieczór</em></h2><p class="music-status" id="music-status" role="status">Muzyka spróbuje uruchomić się automatycznie. Jeśli przeglądarka ją zablokuje, dotknij strony.</p></div></div>
+      <div class="music-controls"><button class="icon-button" id="music-toggle" type="button" aria-label="Odtwórz muzykę" title="Odtwórz muzykę">▶</button><label for="volume">Głośność</label><input id="volume" type="range" min="0" max="1" step="0.01" value="0.45" aria-label="Głośność muzyki"></div>
+      <audio id="background-music" preload="none" loop><source src="Legendary%20Lovers.mp3" type="audio/mpeg"></audio>
+    </section>
+
+    <section class="secrets-section section-shell" id="secrets" aria-labelledby="secrets-title">
+      <div class="section-heading reveal"><p class="eyebrow">MAŁE RZECZY DO ODKRYCIA</p><h2 id="secrets-title">Niebo skrywa <em>sekrety</em></h2><p>Niektóre gwiazdy są bliżej, niż się wydaje. Kliknij te, które mrugają.</p></div>
+      <div class="secret-sky reveal" aria-label="Kliknij gwiazdy i serca, aby znaleźć ukryte wiadomości">
+        <button class="secret-trigger secret-star star-a" type="button" data-secret="1" aria-label="Odkryj ukrytą gwiazdę">✦</button>
+        <button class="secret-trigger secret-star star-b" type="button" data-secret="2" aria-label="Odkryj błękitne serca">♥</button>
+        <button class="secret-trigger secret-star star-c" type="button" data-secret="3" aria-label="Odkryj ukrytą wiadomość">✧</button>
+        <button class="secret-trigger secret-star star-d" type="button" data-secret="4" aria-label="Odkryj specjalny list">✦</button>
+        <button class="secret-trigger secret-star star-e" type="button" data-secret="5" aria-label="Odkryj kolejną niespodziankę">♥</button>
+        <span class="secret-horizon" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="final-section section-shell" id="final-letter" aria-labelledby="final-title">
+      <div class="final-ornament" aria-hidden="true">✧</div>
+      <p class="eyebrow">OSTATNI ROZDZIAŁ NA DZIŚ</p><h2 id="final-title">Mam Ci jeszcze coś <em>do powiedzenia…</em></h2>
+      <p class="final-intro">Na sam koniec zostawiłem dla Ciebie jeden list.</p>
+      <button class="final-envelope" id="final-letter-button" type="button" aria-haspopup="dialog"><span class="envelope-visual" aria-hidden="true"><span>♥</span></span><span class="final-envelope-label">Otwórz list</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>Stworzone specjalnie dla Majci <span aria-hidden="true">♥</span></span><a href="#home">Wróć na początek ↑</a></footer>
+  <div class="heart-burst" id="heart-burst" aria-hidden="true"></div>
+  <dialog class="message-dialog" id="message-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Zamknij list">×</button><div class="dialog-content"><p class="eyebrow">TYLKO DLA CIEBIE</p><h2 id="dialog-title"></h2><div id="dialog-message"></div><span class="dialog-signature" aria-hidden="true">♥</span></div></dialog>
+  <noscript><p class="noscript-note">Włącz JavaScript, aby zobaczyć licznik i otwierać listy.</p></noscript>
+</body>
+</html>
